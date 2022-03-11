@@ -5,8 +5,7 @@ const router = express.Router()
 
 router.get('/ip',(req,res) =>{
     const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-    console.log(lookup(ip))
-    console.log(ip)
+    console.log(''+ip+'  ,,,, '+lookup(ip)+'')
 })
 
 app.use('/',router)
