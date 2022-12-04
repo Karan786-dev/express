@@ -3,7 +3,7 @@ const app = express()
 const router = express.Router()
 let port = 3000
 
-app.use('/',router)
+app.use('/express',router)
 
 router.get('/',(req,res)=>{
     res.send('Hello , World')
