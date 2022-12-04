@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const router = express.Router()
-let port = 8000
+let port = 3000
 
 app.use('/',router)
 
